@@ -25,6 +25,8 @@
     <modules>
         <!-- 入口模块 -->
         <module>weblog-web</module>
+        <!-- admin管理后台模块 -->
+        <module>weblog-module-admin</module>
     </modules>
 
 
