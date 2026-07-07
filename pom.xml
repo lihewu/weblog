@@ -27,6 +27,8 @@
         <module>weblog-web</module>
         <!-- admin管理后台模块 -->
         <module>weblog-module-admin</module>
+        <!-- common通用功能模块 -->
+        <module>weblog-module-common</module>
     </modules>
 
 
