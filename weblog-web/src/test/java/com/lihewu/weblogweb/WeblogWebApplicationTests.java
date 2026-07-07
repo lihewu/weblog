@@ -1,10 +1,10 @@
-package com.lihewu.weblogspringboot;
+package com.lihewu.weblogweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WeblogSpringbootApplicationTests {
+class WeblogWebApplicationTests {
 
     @Test
     void contextLoads() {
