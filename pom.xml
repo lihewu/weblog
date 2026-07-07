@@ -16,13 +16,15 @@
     <version>${revision}</version>
     <name>weblog-springboot</name>
     <!-- 项目描述 -->
-    <description>前后端分离博客 Weblog By 犬小哈</description>
+    <description>前后端分离博客 Weblog By 黎鹤舞</description>
 
     <!-- 多模块项目父工程打包模式必须指定为 pom -->
     <packaging>pom</packaging>
 
     <!-- 子模块管理 -->
     <modules>
+        <!-- 入口模块 -->
+        <module>weblog-web</module>
     </modules>
 
 
@@ -47,9 +49,23 @@
     <build>
         <!-- 统一插件管理 -->
         <pluginManagement>
-
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <excludes>
+                            <exclude>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
         </pluginManagement>
     </build>
+
 
     <!-- 使用阿里云的 Maven 仓库源，提升包下载速度 -->
     <repositories>
