@@ -38,6 +38,7 @@
         <revision>0.0.1-SNAPSHOT</revision>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jackson.version>2.15.2</jackson.version>
 
         <!-- Maven 相关 -->
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -63,6 +64,19 @@
                 <groupId>com.lihewu</groupId>
                 <artifactId>weblog-module-common</artifactId>
                 <version>${revision}</version>
+            </dependency>
+
+            <!-- Jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
 
             <!-- 常用工具库 -->
