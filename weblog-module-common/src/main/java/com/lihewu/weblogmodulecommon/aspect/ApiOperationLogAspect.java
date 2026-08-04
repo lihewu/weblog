@@ -67,6 +67,7 @@ public class ApiOperationLogAspect {
 
             return result;
         } finally {
+            //在请求结束时，为了避免污染其他请求，还需要清除 MDC 中的值
             MDC.clear();
         }
     }

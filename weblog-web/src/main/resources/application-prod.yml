@@ -3,3 +3,12 @@
 #=================================================================
 logging:
   config: classpath:logback-weblog.xml
+  file:
+    # 指定日志文件的名字和存放路径。
+    # 这里写 logs/weblog.log 表示会在项目的根目录下自动创建一个 logs 文件夹，里面存放 weblog.log
+    name: D:\Code_Data\JavaCode\Projects\weblog\weblog-springboot\weblog-logs
+  level:
+    # 设置全局日志级别为 INFO
+    root: INFO
+    # 可以单独设置你自己的包打印 DEBUG 级别的详细日志（方便排查问题）
+    com.lihewu: DEBUG
