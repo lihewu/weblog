@@ -29,7 +29,9 @@ class Knife4jIntegrationTests {
         mockMvc.perform(get("/v3/api-docs/weblog-web"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.info.title").value("Weblog 接口文档"))
-                .andExpect(jsonPath("$.paths['/test'].post").exists());
+                .andExpect(jsonPath("$.paths['/test'].post").exists())
+                .andExpect(jsonPath("$.paths['/test'].post.tags").value(hasItems("测试接口")))
+                .andExpect(jsonPath("$.paths['/test'].post.summary").value("测试接口"));
     }
 
     @Test
