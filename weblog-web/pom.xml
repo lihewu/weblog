@@ -15,6 +15,12 @@
     <description>weblog-web (入口项目，负责博客前台展示相关功能，打包也放在这个模块负责)</description>
 
     <dependencies>
+        <!-- Knife4j 接口文档与调试，版本由父项目统一管理 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.lihewu</groupId>
             <artifactId>weblog-module-common</artifactId>

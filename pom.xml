@@ -48,12 +48,20 @@
         <lombok.version>1.18.28</lombok.version>
         <guava.version>31.1-jre</guava.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
+        <knife4j.version>4.4.0</knife4j.version>
 
     </properties>
 
     <!-- 统一依赖管理 -->
     <dependencyManagement>
         <dependencies>
+            <!-- Knife4j 接口文档与调试 -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.lihewu</groupId>
                 <artifactId>weblog-module-admin</artifactId>

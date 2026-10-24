@@ -7,7 +7,8 @@ import com.lihewu.weblogmodulecommon.exception.BaseExceptionInterface;
  */
 public enum ResponseCodeEnum implements BaseExceptionInterface {
 
-    SYSTEM_ERROR("10000", "出错啦，后台正在努力修复中...");
+    SYSTEM_ERROR("10000", "出错啦，后台正在努力修复中..."),
+    PARAM_NOT_VALID("10001", "参数错误");
 
     private final String errorCode;
     private final String errorMessage;
